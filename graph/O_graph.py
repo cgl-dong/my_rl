@@ -9,13 +9,21 @@ x = np.linspace(0.1,1,10)
 y1 = x
 y2 = x ** 2
 y3 = np.log(x)
-y4 = x**x
 
-plt.figure()  # 类似于先声明一张图片，这个figure后面所有的设置都是在这张图片上操作的
-plt.plot(x, y1,label = "e")  # 制图
-plt.plot(x, y2,label = "d")  # 制图
-plt.plot(x, y3,label = "c")  # 制图
-plt.plot(x, y4,label = "c")  # 制图
 
-plt.show()  # 显示图片
+fig, ax = plt.subplots() # 创建图实例
+x = np.linspace(0,2,100) # 创建x的取值范围
+y1 = x
+ax.plot(x, y1, label='linear') # 作y1 = x 图，并标记此线名为linear
+y2 = x ** 2
+ax.plot(x, y2, label='quadratic') #作y2 = x^2 图，并标记此线名为quadratic
+y3 = x ** 3
+ax.plot(x, y3, label='cubic') # 作y3 = x^3 图，并标记此线名为cubic
+ax.set_xlabel('x label') #设置x轴名称 x label
+ax.set_ylabel('y label') #设置y轴名称 y label
+ax.set_title('Simple Plot') #设置图名为Simple Plot
+ax.legend() #自动检测要在图例中显示的元素，并且显示
+
+plt.show() #图形可视化
+
 

@@ -7,6 +7,7 @@ import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import rl_utils
+import datetime
 
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
@@ -96,9 +97,9 @@ class DQN:
 
 
 
-
+algorithm = "DQN"
 lr = 2e-3
-num_episodes = 5000
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -106,6 +107,19 @@ target_update = 10
 buffer_size = 10000
 minimal_size = 500
 batch_size = 64
+
+parms = {
+"algorithm":algorithm,
+"lr ": lr,
+"num_episodes ":num_episodes,
+"hidden_dim ":hidden_dim,
+"gamma ": gamma,
+"epsilon ": epsilon,
+"target_update ":target_update,
+"buffer_size ":buffer_size,
+"minimal_size ":minimal_size,
+"batch_size ":batch_size,
+}
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
 
@@ -154,6 +168,12 @@ for i in range(10):
                     '%.3f' % np.mean(return_list[-10:])
                 })
             pbar.update(1)
+
+fileName = "../result/{}_{}_{}.txt".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+
+with open(fileName,"w+") as out_file:
+    print(parms,file=out_file,end="\n")
+    print(return_list,file=out_file)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)
