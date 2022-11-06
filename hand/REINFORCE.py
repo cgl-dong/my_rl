@@ -6,7 +6,7 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import rl_utils
 from tqdm import tqdm
-
+import datetime
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
@@ -61,7 +61,7 @@ class REINFORCE:
 
 
 learning_rate = 1e-3
-num_episodes = 2000
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.98
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
@@ -111,6 +111,9 @@ for i in range(10):
                 })
             pbar.update(1)
 
+# algorithm = "Reinforce"
+#
+# fileName = "../result/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)

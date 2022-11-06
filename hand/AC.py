@@ -2,6 +2,7 @@ import os
 
 import gym
 import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torch.nn.functional as F
 import datetime
@@ -92,12 +93,12 @@ class ActorCritic:
 """
 actor_lr = 1e-3
 critic_lr = 1e-2
-num_episodes = 1000
+num_episodes = 500
 hidden_dim = 128
 gamma = 0.98
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
 
-env_name = "CartPole-v1"
+env_name = "CartPole-v0"
 env = gym.make(env_name)
 algorithm = "AC"
 
@@ -120,11 +121,9 @@ agent = ActorCritic(state_dim, hidden_dim, action_dim, actor_lr, critic_lr,gamma
 
 return_list = rl_utils.train_on_policy_agent(env, agent, num_episodes)
 
-fileName = "../result/{}_{}_{}.txt".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+fileName = "../result/v0/{}_{}_{}.txt".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
 
-with open(fileName,"w+") as out_file:
-    print(parms,file=out_file,end="\n")
-    print(return_list,file=out_file)
+np.save(fileName,return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)

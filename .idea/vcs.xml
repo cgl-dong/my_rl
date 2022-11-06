@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Dive-into-DL-PyTorch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Dive-into-DL-PyTorch-master/Dive-into-DL-PyTorch" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ma-gym" vcs="Git" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 import os
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
-
+import datetime
 from common.buffer import PrioritizedBuffer
 
 import torch.nn as nn
@@ -128,7 +128,8 @@ class PERAgent:
 
 
 env_id = "CartPole-v1"
-num_episodes = 500
+env_name = "CartPole-v1"
+num_episodes = 1000
 batch_size = 64
 
 env = gym.make(env_id)
@@ -159,6 +160,11 @@ for i in range(10):
                         '%.3f' % np.mean(return_list[-10:])
                 })
             pbar.update(1)
+
+algorithm = "PER_DQN"
+fileName = "../result/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+
+np.save(fileName,return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)

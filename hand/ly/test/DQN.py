@@ -6,8 +6,10 @@ from tqdm import tqdm
 import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
-import rl_utils
+import hand.rl_utils as rl_utils
 import datetime
+
+import hand.ly.AttentiveSampleStrategy
 
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
@@ -99,7 +101,7 @@ class DQN:
 
 algorithm = "DQN"
 lr = 2e-3
-num_episodes = 500
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -108,28 +110,28 @@ buffer_size = 10000
 minimal_size = 500
 batch_size = 64
 
-parms = {
-"algorithm":algorithm,
-"lr ": lr,
-"num_episodes ":num_episodes,
-"hidden_dim ":hidden_dim,
-"gamma ": gamma,
-"epsilon ": epsilon,
-"target_update ":target_update,
-"buffer_size ":buffer_size,
-"minimal_size ":minimal_size,
-"batch_size ":batch_size,
-}
+# parms = {
+# "algorithm":algorithm,
+# "lr ": lr,
+# "num_episodes ":num_episodes,
+# "hidden_dim ":hidden_dim,
+# "gamma ": gamma,
+# "epsilon ": epsilon,
+# "target_update ":target_update,
+# "buffer_size ":buffer_size,
+# "minimal_size ":minimal_size,
+# "batch_size ":batch_size,
+# }
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
 
-env_name = 'CartPole-v0'
+env_name = 'CartPole-v1'
 env = gym.make(env_name)
 random.seed(0)
 np.random.seed(0)
 env.seed(0)
 torch.manual_seed(0)
-replay_buffer = ReplayBuffer(buffer_size)
+replay_buffer = hand.ly.AttentiveSampleStrategy(flags = 1, alfa = 0.1, lambda_batch_multiplier = 9, strategy = None, dist_function = 'ln_norm', p = 0.1)
 state_dim = env.observation_space.shape[0]
 action_dim = env.action_space.n
 agent = DQN(state_dim, hidden_dim, action_dim, lr, gamma, epsilon,
@@ -169,9 +171,6 @@ for i in range(10):
                 })
             pbar.update(1)
 
-fileName = "../result/v0/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
-
-np.save(fileName,return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)

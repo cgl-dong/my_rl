@@ -6,6 +6,7 @@ import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
 import rl_utils
+import datetime
 
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
@@ -159,7 +160,7 @@ target_entropy = -1
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
 
-env_name = 'CartPole-v1'
+env_name = 'CartPole-v0'
 env = gym.make(env_name)
 random.seed(0)
 np.random.seed(0)
@@ -174,7 +175,11 @@ agent = SAC(state_dim, hidden_dim, action_dim, actor_lr, critic_lr, alpha_lr,
 return_list = rl_utils.train_off_policy_agent(env, agent, num_episodes,
                                               replay_buffer, minimal_size,
                                               batch_size)
+algorithm = "SAC"
 
+fileName = "../result/v0/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+
+np.save(fileName,return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)
