@@ -2,65 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="模仿学习加入">
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/DS_TD3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/StaticSparseTD3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/TD3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/results.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/sparse_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dynamic-Sparse-Training-for-Deep-Reinforcement-Learning-main/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/DDPG.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/HAC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/asset/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/asset/continuous_mountain_car.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/asset/pendulum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/asset/rendering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/gif/MountainCarContinuous-v0-3level.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/gif/MountainCarContinuous-v0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/gif/Pendulum-v0-2level.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_solved_level_0_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_solved_level_0_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_solved_level_1_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_solved_level_1_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_level_0_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_level_0_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_level_1_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_level_1_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_level_2_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_level_2_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_solved_level_0_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_solved_level_0_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_solved_level_1_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_solved_level_1_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_solved_level_2_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/3level/HAC_MountainCarContinuous-h-v1_solved_level_2_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_level_0_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_level_0_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_level_1_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_level_1_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_solved_level_0_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_solved_level_0_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_solved_level_1_actor.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/Pendulum-h-v1/2level/HAC_Pendulum-h-v1_solved_level_1_crtic.pth" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/GAN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/GAN_PPO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/gan_test/DQN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/gan_test/rl_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/gan/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/HER_DQN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/experience_replay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/fourrooms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/models/option_critic_seed=0_1k" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/models/option_critic_seed=0_2k" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/option_critic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/10708 poster.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/10708_Project.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/Readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/assets/expert_traj/Hopper-v2_expert_traj.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/a2c.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/ppo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/trpo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/logs/R_hier_dense_trpo.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/logs/reacher_sparse_trpo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/main_reacher_a2c.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/main_reacher_ppo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/main_reacher_trpo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/test_reacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/gail/gail_gym.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/gail/save_expert_traj.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_critic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_discriminator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_policy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_policy_disc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/math.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/replay_memory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/torch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/zfilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/agents/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/agents/hdqn_mdp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/agents/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/hdqn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/run_hdqn.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/agents/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/agents/hdqn_mdp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/envs/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/envs/mdp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/hdqn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/run_hdqn.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/metrics.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/optimizers/optimizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/policies/dqn/dqn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/policies/policy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/policies/random.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils/goal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils/storage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_actor.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_crtic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_crtic.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_actor.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_crtic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_crtic.pth" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,31 +110,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/pythonProject&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;PyScientificConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/pythonProject/hand/OC",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "PyScientificConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\hand\OC" />
+      <recent name="D:\pythonProject\hand\hDQN" />
+      <recent name="D:\pythonProject\hand\hDQN\HRL-master\h-DQN" />
       <recent name="D:\pythonProject" />
       <recent name="D:\pythonProject\hand\gan_test" />
-      <recent name="D:\pythonProject\result\v0" />
-      <recent name="D:\pythonProject\result" />
-      <recent name="D:\pythonProject\hand\ly\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\hand\hDQN\HRL-master" />
       <recent name="D:\pythonProject\hand\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DQN">
-    <configuration name="BC_PPO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="HER_DQN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +148,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/BC_PPO.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/HER_DQN.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DQN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,12 +165,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/gan_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/gan_test/DQN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,7 +179,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GAIL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,12 +187,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/GAIL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,7 +201,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GAN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="storage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -198,12 +209,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/GAN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils/storage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,35 +223,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main.test_env" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/gan_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/gan_test/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.test_env&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.DQN" />
-        <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.GAN" />
-        <item itemvalue="Python.GAIL" />
-        <item itemvalue="Python.BC_PPO" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.storage" />
+        <item itemvalue="Python tests.Python tests for main.test_env" />
+        <item itemvalue="Python.HER_DQN" />
       </list>
     </recent_temporary>
   </component>
@@ -270,6 +274,7 @@
       <workItem from="1667614692482" duration="21150000" />
       <workItem from="1668147130009" duration="1201000" />
       <workItem from="1668168538730" duration="636000" />
+      <workItem from="1668232359965" duration="22317000" />
     </task>
     <task id="LOCAL-00001" summary="tianshou加入">
       <created>1667448603744</created>
@@ -372,7 +377,19 @@
           <line>34</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/main.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -405,18 +422,23 @@
     <SUITE FILE_PATH="coverage/pythonProject$GAN.coverage" NAME="GAN Coverage Results" MODIFIED="1667736966120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$save_test.coverage" NAME="save_test Coverage Results" MODIFIED="1667217292105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
     <SUITE FILE_PATH="coverage/pythonProject$PPO_v1.coverage" NAME="PPO_v1 Coverage Results" MODIFIED="1667219092229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1667702473524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1668481832143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
     <SUITE FILE_PATH="coverage/pythonProject$torch_linear02.coverage" NAME="torch_linear02 Coverage Results" MODIFIED="1664371849665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$A3C.coverage" NAME="A3C Coverage Results" MODIFIED="1667701890832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$HER_DQN.coverage" NAME="HER_DQN Coverage Results" MODIFIED="1668479044540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$SAC.coverage" NAME="SAC Coverage Results" MODIFIED="1667565475664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$train.coverage" NAME="train Coverage Results" MODIFIED="1668232768699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master" />
     <SUITE FILE_PATH="coverage/pythonProject$REINFORCE_with_baseline.coverage" NAME="REINFORCE_with_baseline Coverage Results" MODIFIED="1665821116545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$TRPO.coverage" NAME="TRPO Coverage Results" MODIFIED="1665537487486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1668489356675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
     <SUITE FILE_PATH="coverage/pythonProject$ok_demo.coverage" NAME="ok.demo Coverage Results" MODIFIED="1664454974792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$REINFORCE.coverage" NAME="REINFORCE Coverage Results" MODIFIED="1667651870298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$BC_PPO.coverage" NAME="BC_PPO Coverage Results" MODIFIED="1667703903711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$graph.coverage" NAME="graph Coverage Results" MODIFIED="1667535236275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph.coverage" NAME="graph Coverage Results" MODIFIED="1668233072678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result" />
     <SUITE FILE_PATH="coverage/pythonProject$IPPO.coverage" NAME="IPPO Coverage Results" MODIFIED="1665537248151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$DQN.coverage" NAME="DQN Coverage Results" MODIFIED="1667789439872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/gan_test" />
+    <SUITE FILE_PATH="coverage/pythonProject$storage.coverage" NAME="storage Coverage Results" MODIFIED="1668484736027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils" />
+    <SUITE FILE_PATH="coverage/pythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1668562342163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master" />
     <SUITE FILE_PATH="coverage/pythonProject$DQN__1_.coverage" NAME="DQN (1) Coverage Results" MODIFIED="1667529384786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$graph__1_.coverage" NAME="graph (1) Coverage Results" MODIFIED="1667614714768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result/v0" />
     <SUITE FILE_PATH="coverage/pythonProject$dataload.coverage" NAME="dataload Coverage Results" MODIFIED="1665986417976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/TD3-master/learning_curves" />
