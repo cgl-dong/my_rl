@@ -1,14 +1,13 @@
+import os
+
 import gym
+import matplotlib.pyplot as plt
 import torch
 import torch.nn.functional as F
-import numpy as np
-import datetime
-import matplotlib.pyplot as plt
+
 import rl_utils
 
-import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
-
 
 
 class PolicyNet(torch.nn.Module):
@@ -36,6 +35,7 @@ class ValueNet(torch.nn.Module):
 
 class PPO:
     ''' PPO算法,采用截断方式 '''
+
     def __init__(self, state_dim, hidden_dim, action_dim, actor_lr, critic_lr,
                  lmbda, epochs, eps, gamma, device):
         self.actor = PolicyNet(state_dim, hidden_dim, action_dim).to(device)
@@ -95,36 +95,22 @@ class PPO:
 
 actor_lr = 1e-3
 critic_lr = 1e-2
-num_episodes = 500
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.98
 lmbda = 0.95
 epochs = 10
 eps = 0.2
-env_name = 'CartPole-v0'
+env_name = 'CartPole-v1'
 # env_name = 'MountainCarContinuous-v0'
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
-
 
 env = gym.make(env_name)
 # 调整这些随机种子参数，回报曲线也会变化
 algorithm = "PPO"
 
-parms = {
-"algorithm":algorithm,
-"actor_lr ": 1e-3,
-"critic_lr ": 1e-2,
-"num_episodes": 1000,
-"hidden_dim ": 128,
-"gamma ": 0.98,
-"lmbda":0.95,
-"epochs" : 10,
-"eps ": 0.2,
-"env_name ": 'CartPole-v0',
-}
-
-
+print(device)
 env.seed()
 torch.manual_seed(10)
 state_dim = env.observation_space.shape[0]
@@ -133,10 +119,6 @@ agent = PPO(state_dim, hidden_dim, action_dim, actor_lr, critic_lr, lmbda,
             epochs, eps, gamma, device)
 
 return_list = rl_utils.train_on_policy_agent(env, agent, num_episodes)
-
-fileName = "../result/v0/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
-
-np.save(fileName,return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)

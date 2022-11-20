@@ -2,75 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="模仿学习加入">
-      <change afterPath="$PROJECT_DIR$/hand/HER_DQN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/experience_replay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/fourrooms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/models/option_critic_seed=0_1k" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/models/option_critic_seed=0_2k" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/option_critic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/10708 poster.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/10708_Project.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/Readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/assets/expert_traj/Hopper-v2_expert_traj.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/a2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/ppo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/core/trpo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/logs/R_hier_dense_trpo.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/logs/reacher_sparse_trpo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/main_reacher_a2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/main_reacher_ppo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/main_reacher_trpo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/examples/test_reacher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/gail/gail_gym.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/gail/save_expert_traj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_critic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_discriminator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_policy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/models/mlp_policy_disc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/math.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/replay_memory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/torch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/Hierarchical Policy Gradient/Reacher/utils/zfilter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/agents/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/agents/hdqn_mdp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/agents/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/hdqn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/FetchReach/run_hdqn.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/agents/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/agents/hdqn_mdp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/envs/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/envs/mdp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/hdqn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/run_hdqn.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/HRL-master/h-DQN/MDP/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/metrics.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/optimizers/optimizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/policies/dqn/dqn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/policies/policy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/policies/random.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils/goal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_actor.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_crtic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_0_crtic.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_actor.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_actor.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_crtic.pth" beforeDir="false" afterPath="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master/preTrained/MountainCarContinuous-h-v1/2level/HAC_MountainCarContinuous-h-v1_level_1_crtic.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hand/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand/DQN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hand/PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand/PPO.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +54,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/pythonProject/hand/OC",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "PyScientificConfigurable"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -134,8 +70,8 @@
       <recent name="D:\pythonProject\hand\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
-    <configuration name="HER_DQN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.PPO">
+    <configuration name="DQN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,7 +84,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/HER_DQN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/DQN.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PPO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/PPO.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,28 +181,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main.test_env" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.test_env&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PPO" />
+        <item itemvalue="Python.DQN" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.storage" />
-        <item itemvalue="Python tests.Python tests for main.test_env" />
-        <item itemvalue="Python.HER_DQN" />
       </list>
     </recent_temporary>
   </component>
@@ -368,11 +311,6 @@
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hand/PPO.py</url>
-          <line>136</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/result/graph.py</url>
           <line>34</line>
           <option name="timeStamp" value="82" />
@@ -399,52 +337,54 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject$PER_DQN2.coverage" NAME="PER_DQN2 Coverage Results" MODIFIED="1667531366424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$O_graph.coverage" NAME="O_graph Coverage Results" MODIFIED="1667357239660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
-    <SUITE FILE_PATH="coverage/pythonProject$torch_tidu.coverage" NAME="torch_tidu Coverage Results" MODIFIED="1664347239138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$DulingDQN.coverage" NAME="DulingDQN Coverage Results" MODIFIED="1664629295628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$PPO_Pendulum.coverage" NAME="PPO_Pendulum Coverage Results" MODIFIED="1667219567049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$DDQN.coverage" NAME="DDQN Coverage Results" MODIFIED="1664628356004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$PER_DQN.coverage" NAME="PER_DQN Coverage Results" MODIFIED="1667204295634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$Q_Learning.coverage" NAME="Q_Learning Coverage Results" MODIFIED="1664611349227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$softmax_classier.coverage" NAME="softmax-classier Coverage Results" MODIFIED="1664442388825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$tidu01.coverage" NAME="tidu01 Coverage Results" MODIFIED="1664444469539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1667788970776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/gan_test" />
-    <SUITE FILE_PATH="coverage/pythonProject$PPO.coverage" NAME="PPO Coverage Results" MODIFIED="1667566542507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$mujoco_test.coverage" NAME="mujoco_test Coverage Results" MODIFIED="1667527050603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
-    <SUITE FILE_PATH="coverage/pythonProject$torch_linear.coverage" NAME="torch_linear Coverage Results" MODIFIED="1664371653722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$AC.coverage" NAME="AC Coverage Results" MODIFIED="1667616599952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$DDPG.coverage" NAME="DDPG Coverage Results" MODIFIED="1666598495836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$My_TD3.coverage" NAME="My_TD3 Coverage Results" MODIFIED="1665990942029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$TD3.coverage" NAME="TD3 Coverage Results" MODIFIED="1665195931747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$torch_tidu02.coverage" NAME="torch_tidu02 Coverage Results" MODIFIED="1664348647663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$tianshou_test__1_.coverage" NAME="tianshou_test (1) Coverage Results" MODIFIED="1667448533642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
+    <SUITE FILE_PATH="coverage/pythonProject$mujoco_test.coverage" NAME="mujoco_test Coverage Results" MODIFIED="1667448251145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
     <SUITE FILE_PATH="coverage/pythonProject$GAN.coverage" NAME="GAN Coverage Results" MODIFIED="1667736966120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$save_test.coverage" NAME="save_test Coverage Results" MODIFIED="1667217292105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
+    <SUITE FILE_PATH="coverage/pythonProject$DQN__1_.coverage" NAME="DQN (1) Coverage Results" MODIFIED="1667529384786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$N_DQN.coverage" NAME="N_DQN Coverage Results" MODIFIED="1667032972270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1668489356675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
+    <SUITE FILE_PATH="coverage/pythonProject$REINFORCE.coverage" NAME="REINFORCE Coverage Results" MODIFIED="1665820589961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$IPPO.coverage" NAME="IPPO Coverage Results" MODIFIED="1665537248151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$train.coverage" NAME="train Coverage Results" MODIFIED="1668232768699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master" />
+    <SUITE FILE_PATH="coverage/pythonProject$SAC.coverage" NAME="SAC Coverage Results" MODIFIED="1665579144125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$REINFORCE_with_baseline.coverage" NAME="REINFORCE_with_baseline Coverage Results" MODIFIED="1665821116545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$Q_Learning.coverage" NAME="Q_Learning Coverage Results" MODIFIED="1664611349227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1668562342163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master" />
+    <SUITE FILE_PATH="coverage/pythonProject$PER_DQN2.coverage" NAME="PER_DQN2 Coverage Results" MODIFIED="1667203725635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$DDQN.coverage" NAME="DDQN Coverage Results" MODIFIED="1664628356004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$tidu02.coverage" NAME="tidu02 Coverage Results" MODIFIED="1664285617279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_rl$DQN.coverage" NAME="DQN Coverage Results" MODIFIED="1668954501199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph__1_.coverage" NAME="graph (1) Coverage Results" MODIFIED="1667614714768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result/v0" />
     <SUITE FILE_PATH="coverage/pythonProject$PPO_v1.coverage" NAME="PPO_v1 Coverage Results" MODIFIED="1667219092229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1668481832143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
+    <SUITE FILE_PATH="coverage/pythonProject$TD3.coverage" NAME="TD3 Coverage Results" MODIFIED="1665195931747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$BC_PPO.coverage" NAME="BC_PPO Coverage Results" MODIFIED="1667703903711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1667384027179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
+    <SUITE FILE_PATH="coverage/pythonProject$DulingDQN.coverage" NAME="DulingDQN Coverage Results" MODIFIED="1664629295628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$tidu01.coverage" NAME="tidu01 Coverage Results" MODIFIED="1664444469539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$DDPG.coverage" NAME="DDPG Coverage Results" MODIFIED="1666598495836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$TRPO.coverage" NAME="TRPO Coverage Results" MODIFIED="1665537487486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1664416104648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$PPO.coverage" NAME="PPO Coverage Results" MODIFIED="1667391297506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/my_rl$PPO.coverage" NAME="PPO Coverage Results" MODIFIED="1668954895562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph.coverage" NAME="graph Coverage Results" MODIFIED="1667394904468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result" />
+    <SUITE FILE_PATH="coverage/pythonProject$DQN.coverage" NAME="DQN Coverage Results" MODIFIED="1667371900784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$GAIL.coverage" NAME="GAIL Coverage Results" MODIFIED="1667706073608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$tianshou_test__1_.coverage" NAME="tianshou_test (1) Coverage Results" MODIFIED="1667448477026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
+    <SUITE FILE_PATH="coverage/pythonProject$PPO_Pendulum.coverage" NAME="PPO_Pendulum Coverage Results" MODIFIED="1667219567049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$My_TD3.coverage" NAME="My_TD3 Coverage Results" MODIFIED="1665990942029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$torch_tidu02.coverage" NAME="torch_tidu02 Coverage Results" MODIFIED="1664348647663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$dataload.coverage" NAME="dataload Coverage Results" MODIFIED="1665986417976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/TD3-master/learning_curves" />
     <SUITE FILE_PATH="coverage/pythonProject$torch_linear02.coverage" NAME="torch_linear02 Coverage Results" MODIFIED="1664371849665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$A3C.coverage" NAME="A3C Coverage Results" MODIFIED="1667701890832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$HER_DQN.coverage" NAME="HER_DQN Coverage Results" MODIFIED="1668479044540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$SAC.coverage" NAME="SAC Coverage Results" MODIFIED="1667565475664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$train.coverage" NAME="train Coverage Results" MODIFIED="1668232768699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Hierarchical-Actor-Critic-HAC-PyTorch-master" />
-    <SUITE FILE_PATH="coverage/pythonProject$REINFORCE_with_baseline.coverage" NAME="REINFORCE_with_baseline Coverage Results" MODIFIED="1665821116545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$TRPO.coverage" NAME="TRPO Coverage Results" MODIFIED="1665537487486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1668489356675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master" />
-    <SUITE FILE_PATH="coverage/pythonProject$ok_demo.coverage" NAME="ok.demo Coverage Results" MODIFIED="1664454974792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$REINFORCE.coverage" NAME="REINFORCE Coverage Results" MODIFIED="1667651870298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$BC_PPO.coverage" NAME="BC_PPO Coverage Results" MODIFIED="1667703903711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$graph.coverage" NAME="graph Coverage Results" MODIFIED="1668233072678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result" />
-    <SUITE FILE_PATH="coverage/pythonProject$IPPO.coverage" NAME="IPPO Coverage Results" MODIFIED="1665537248151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$DQN.coverage" NAME="DQN Coverage Results" MODIFIED="1667789439872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/gan_test" />
+    <SUITE FILE_PATH="coverage/pythonProject$torch_linear.coverage" NAME="torch_linear Coverage Results" MODIFIED="1664371653722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$storage.coverage" NAME="storage Coverage Results" MODIFIED="1668484736027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils" />
-    <SUITE FILE_PATH="coverage/pythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1668562342163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master" />
-    <SUITE FILE_PATH="coverage/pythonProject$DQN__1_.coverage" NAME="DQN (1) Coverage Results" MODIFIED="1667529384786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$graph__1_.coverage" NAME="graph (1) Coverage Results" MODIFIED="1667614714768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result/v0" />
-    <SUITE FILE_PATH="coverage/pythonProject$dataload.coverage" NAME="dataload Coverage Results" MODIFIED="1665986417976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/TD3-master/learning_curves" />
-    <SUITE FILE_PATH="coverage/pythonProject$N_DQN.coverage" NAME="N_DQN Coverage Results" MODIFIED="1667032972270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$GAIL.coverage" NAME="GAIL Coverage Results" MODIFIED="1667706073608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$tidu02.coverage" NAME="tidu02 Coverage Results" MODIFIED="1664285617279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$torch_tidu.coverage" NAME="torch_tidu Coverage Results" MODIFIED="1664347239138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$ok_demo.coverage" NAME="ok.demo Coverage Results" MODIFIED="1664454974792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$cnn01.coverage" NAME="cnn01 Coverage Results" MODIFIED="1664456594860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$save_test.coverage" NAME="save_test Coverage Results" MODIFIED="1667217292105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
+    <SUITE FILE_PATH="coverage/pythonProject$O_graph.coverage" NAME="O_graph Coverage Results" MODIFIED="1667357239660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
+    <SUITE FILE_PATH="coverage/pythonProject$PER_DQN.coverage" NAME="PER_DQN Coverage Results" MODIFIED="1667204295634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$softmax_classier.coverage" NAME="softmax-classier Coverage Results" MODIFIED="1664442388825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$AC.coverage" NAME="AC Coverage Results" MODIFIED="1667391824587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$HER_DQN.coverage" NAME="HER_DQN Coverage Results" MODIFIED="1668479044540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
   </component>
 </project>
