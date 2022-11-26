@@ -104,14 +104,11 @@ class DQN:
 
     def reset_weights(self):
         net_q = self.q_net
-        net_qt = self.target_q_net
         torch.nn.init.xavier_uniform_(net_q.fc2.weight)
-        torch.nn.init.xavier_uniform_(net_qt.fc2.weight)
-
 
 algorithm = "DQN-with-ReSet"
 lr = 2e-3
-num_episodes = 10000
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -148,13 +145,11 @@ agent = DQN(state_dim, hidden_dim, action_dim, lr, gamma, epsilon,
             target_update, device)
 
 return_list = []
+flag = 1
 for i in range(10):
-    cur_return = np.mean(return_list[-1000:])
-    last_return = np.mean(return_list[-2000:-1000])
-    if cur_return < last_return:
-        agent.reset_weights()
     with tqdm(total=int(num_episodes / 10), desc='Iteration %d' % i) as pbar:
         for i_episode in range(int(num_episodes / 10)):
+
             episode_return = 0
             state = env.reset()
             done = False
@@ -177,11 +172,18 @@ for i in range(10):
                     agent.update(transition_dict)
             return_list.append(episode_return)
             if (i_episode + 1) % 10 == 0:
+                cur_return = np.mean(return_list[-100:])
+                last_return = np.mean(return_list)
+                if cur_return < last_return:
+                    if flag:
+                        print("reset ----", end="\n")
+                        agent.reset_weights()
+                        flag = 0
                 pbar.set_postfix({
                     'episode':
                         '%d' % (num_episodes / 10 * i + i_episode + 1),
                     'return':
-                        '%.3f' % np.mean(return_list[-1000:])
+                        '%.3f' % np.mean(return_list[-10:])
                 })
             pbar.update(1)
 

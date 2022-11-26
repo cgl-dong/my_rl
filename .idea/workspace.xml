@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="delete 无用">
-      <change afterPath="$PROJECT_DIR$/hand/result/graph.py" afterDir="false" />
+    <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="reSet DQN">
+      <change afterPath="$PROJECT_DIR$/hand/AC-Reset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hand/DQN-with-Reset.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand/DQN-with-Reset.py" afterDir="false" />
     </list>
@@ -55,18 +55,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/pythonProject/hand/result",
+    "last_opened_file_path": "D:/pythonProject/hand",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\pythonProject\hand\result" />
       <recent name="D:\pythonProject\hand" />
+      <recent name="D:\pythonProject\result\v1-reset" />
+      <recent name="D:\pythonProject\hand\result" />
       <recent name="D:\pythonProject\result" />
       <recent name="D:\pythonProject\hand\resetN" />
-      <recent name="D:\pythonProject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\pythonProject\ElegantRL-master" />
@@ -75,8 +75,8 @@
       <recent name="D:\pythonProject\hand\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DQN-with-Reset">
-    <configuration name="DQN (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.AC-Reset">
+    <configuration name="AC-Reset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,7 +89,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/DQN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/AC-Reset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +120,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DQN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="graph (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,34 +128,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hand/Reset-Network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/result" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hand/Reset-Network/DQN.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="graph (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/result/v1-reset" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result/v1-reset/graph.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result/graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,13 +164,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graph" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph/plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AC-Reset" />
         <item itemvalue="Python.DQN-with-Reset" />
+        <item itemvalue="Python.plot" />
+        <item itemvalue="Python.graph (1)" />
         <item itemvalue="Python.graph" />
-        <item itemvalue="Python.DQN (1)" />
-        <item itemvalue="Python.DQN" />
-        <item itemvalue="Python.graph (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669433975740</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="reSet DQN">
+      <created>1669443648103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669443648103</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +287,8 @@
     <MESSAGE value="模仿学习加入" />
     <MESSAGE value="HRL加入" />
     <MESSAGE value="delete 无用" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete 无用" />
+    <MESSAGE value="reSet DQN" />
+    <option name="LAST_COMMIT_MESSAGE" value="reSet DQN" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -324,11 +332,6 @@
           <url>file://$PROJECT_DIR$/graph/O_graph.py</url>
           <line>12</line>
           <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hand/PPO.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/result/graph.py</url>
@@ -384,8 +387,9 @@
     <SUITE FILE_PATH="coverage/pythonProject$torch_linear.coverage" NAME="torch_linear Coverage Results" MODIFIED="1664371653722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$AC.coverage" NAME="AC Coverage Results" MODIFIED="1667616599952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$DDPG.coverage" NAME="DDPG Coverage Results" MODIFIED="1666598495836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$graph__2_.coverage" NAME="graph (2) Coverage Results" MODIFIED="1669432855335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result/v1-reset" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph__2_.coverage" NAME="graph (2) Coverage Results" MODIFIED="1669446569541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result/v1-reset" />
     <SUITE FILE_PATH="coverage/pythonProject$TD3.coverage" NAME="TD3 Coverage Results" MODIFIED="1665195931747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$plot.coverage" NAME="plot Coverage Results" MODIFIED="1669448183649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
     <SUITE FILE_PATH="coverage/pythonProject$torch_tidu02.coverage" NAME="torch_tidu02 Coverage Results" MODIFIED="1664348647663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$tianshou_test__1_.coverage" NAME="tianshou_test (1) Coverage Results" MODIFIED="1667448533642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
     <SUITE FILE_PATH="coverage/pythonProject$save_test.coverage" NAME="save_test Coverage Results" MODIFIED="1667217292105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
@@ -397,10 +401,11 @@
     <SUITE FILE_PATH="coverage/pythonProject$REINFORCE.coverage" NAME="REINFORCE Coverage Results" MODIFIED="1667651870298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$IPPO.coverage" NAME="IPPO Coverage Results" MODIFIED="1665537248151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1668931074144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/OC/option-critic-pytorch-master" />
-    <SUITE FILE_PATH="coverage/pythonProject$graph__1_.coverage" NAME="graph (1) Coverage Results" MODIFIED="1669431563366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph__1_.coverage" NAME="graph (1) Coverage Results" MODIFIED="1669447474849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result" />
     <SUITE FILE_PATH="coverage/pythonProject$O_graph.coverage" NAME="O_graph Coverage Results" MODIFIED="1667357239660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graph" />
     <SUITE FILE_PATH="coverage/pythonProject$torch_tidu.coverage" NAME="torch_tidu Coverage Results" MODIFIED="1664347239138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject$DQN_with_Reset.coverage" NAME="DQN-with-Reset Coverage Results" MODIFIED="1669443507582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$DQN_with_Reset.coverage" NAME="DQN-with-Reset Coverage Results" MODIFIED="1669467881801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
+    <SUITE FILE_PATH="coverage/pythonProject$AC_Reset.coverage" NAME="AC-Reset Coverage Results" MODIFIED="1669468243141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$DDQN.coverage" NAME="DDQN Coverage Results" MODIFIED="1664628356004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$softmax_classier.coverage" NAME="softmax-classier Coverage Results" MODIFIED="1664442388825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$mujoco_test.coverage" NAME="mujoco_test Coverage Results" MODIFIED="1667527050603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
@@ -415,7 +420,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$TRPO.coverage" NAME="TRPO Coverage Results" MODIFIED="1669430856936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$ok_demo.coverage" NAME="ok.demo Coverage Results" MODIFIED="1664454974792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$BC_PPO.coverage" NAME="BC_PPO Coverage Results" MODIFIED="1667703903711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$graph.coverage" NAME="graph Coverage Results" MODIFIED="1669443057471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/result" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph.coverage" NAME="graph Coverage Results" MODIFIED="1669446596115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/result" />
     <SUITE FILE_PATH="coverage/pythonProject$storage.coverage" NAME="storage Coverage Results" MODIFIED="1668484736027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/hDQN/hierarchical-dqn-master/utils" />
     <SUITE FILE_PATH="coverage/pythonProject$DQN.coverage" NAME="DQN Coverage Results" MODIFIED="1669433494479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand/Reset-Network" />
     <SUITE FILE_PATH="coverage/pythonProject$DQN__1_.coverage" NAME="DQN (1) Coverage Results" MODIFIED="1669433675797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
