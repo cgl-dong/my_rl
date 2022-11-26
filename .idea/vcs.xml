@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Dive-into-DL-PyTorch" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Dive-into-DL-PyTorch-master/Dive-into-DL-PyTorch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Soft-Actor-Critic-and-Extensions" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ma-gym" vcs="Git" />
   </component>
 </project>
