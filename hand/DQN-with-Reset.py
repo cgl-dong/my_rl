@@ -1,15 +1,16 @@
-import random
-import gym
-import numpy as np
 import collections
-from tqdm import tqdm
+import datetime
+import os
+import random
+
+import gym
+import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torch.nn.functional as F
-import matplotlib.pyplot as plt
-import rl_utils
-import datetime
+from tqdm import tqdm
 
-import os
+import rl_utils
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
@@ -107,9 +108,9 @@ class DQN:
         torch.nn.init.xavier_uniform_(net.fc2.weight)
 
 
-algorithm = "DQN"
+algorithm = "DQN-with-ReSet"
 lr = 2e-3
-num_episodes = 1000
+num_episodes = 10000
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -183,21 +184,24 @@ for i in range(10):
                 })
             pbar.update(1)
 
-fileName = "D:\\pythonProject\\result\\v1-reset\\{}_{}_{}.npy".format(algorithm, env_name,
-                                                    datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
-
+dir = "./result"
+if not os.path.exists(dir):
+    os.makedirs(dir)
+fileName = "{}/{}_{}_{}.npy".format(dir, algorithm, env_name,
+                                    datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+print(os.getcwd())
 np.save(fileName, return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)
 plt.xlabel('Episodes')
 plt.ylabel('Returns')
-plt.title('DQN on {}'.format(env_name))
+plt.title('{} on {}'.format(algorithm, env_name))
 plt.show()
 
 mv_return = rl_utils.moving_average(return_list, 9)
 plt.plot(episodes_list, mv_return)
 plt.xlabel('Episodes')
 plt.ylabel('Returns')
-plt.title('DQN moving_average on {}'.format(env_name))
+plt.title('{} moving_average on {}'.format(algorithm, env_name))
 plt.show()
