@@ -1,4 +1,5 @@
 import gym
+import matplotlib.pyplot as plt
 import torch
 import torch.nn.functional as F
 import numpy as np
@@ -95,17 +96,16 @@ class PPO:
 
 actor_lr = 1e-3
 critic_lr = 1e-2
-num_episodes = 500
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.98
 lmbda = 0.95
 epochs = 10
 eps = 0.2
-env_name = 'CartPole-v0'
+env_name = 'CartPole-v1'
 # env_name = 'MountainCarContinuous-v0'
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
-
 
 env = gym.make(env_name)
 # 调整这些随机种子参数，回报曲线也会变化
@@ -121,7 +121,7 @@ parms = {
 "lmbda":0.95,
 "epochs" : 10,
 "eps ": 0.2,
-"env_name ": 'CartPole-v0',
+"env_name ": 'CartPole-v1',
 }
 
 
@@ -134,7 +134,7 @@ agent = PPO(state_dim, hidden_dim, action_dim, actor_lr, critic_lr, lmbda,
 
 return_list = rl_utils.train_on_policy_agent(env, agent, num_episodes)
 
-fileName = "../result/v0/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+fileName = "../result/{}_{}_{}.txt".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
 
 np.save(fileName,return_list)
 
