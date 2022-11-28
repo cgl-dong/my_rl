@@ -1,15 +1,16 @@
-import random
-import gym
-import numpy as np
 import collections
-from tqdm import tqdm
+import datetime
+import os
+import random
+
+import gym
+import matplotlib.pyplot as plt
+import numpy as np
 import torch
 import torch.nn.functional as F
-import matplotlib.pyplot as plt
-import rl_utils
-import datetime
+from tqdm import tqdm
 
-import os
+import rl_utils
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
@@ -102,12 +103,10 @@ class DQN:
         self.count += 1
 
     def reset_weights(self):
-        net = self.q_net
-        torch.nn.init.xavier_uniform_(net.fc1.weight)
-        torch.nn.init.xavier_uniform_(net.fc2.weight)
+        net_q = self.q_net
+        torch.nn.init.xavier_uniform_(net_q.fc2.weight)
 
-
-algorithm = "DQN"
+algorithm = "DQN-with-ReSet"
 lr = 2e-3
 num_episodes = 1000
 hidden_dim = 128
@@ -146,13 +145,11 @@ agent = DQN(state_dim, hidden_dim, action_dim, lr, gamma, epsilon,
             target_update, device)
 
 return_list = []
+flag = 1
 for i in range(10):
-    cur_return = np.mean(return_list[-10:])
-    last_return = np.mean(return_list[-20:-10])
-    if cur_return < last_return:
-        agent.reset_weights()
     with tqdm(total=int(num_episodes / 10), desc='Iteration %d' % i) as pbar:
         for i_episode in range(int(num_episodes / 10)):
+
             episode_return = 0
             state = env.reset()
             done = False
@@ -175,6 +172,13 @@ for i in range(10):
                     agent.update(transition_dict)
             return_list.append(episode_return)
             if (i_episode + 1) % 10 == 0:
+                cur_return = np.mean(return_list[-100:])
+                last_return = np.mean(return_list)
+                if cur_return < last_return:
+                    if flag:
+                        print("reset ----", end="\n")
+                        agent.reset_weights()
+                        flag = 0
                 pbar.set_postfix({
                     'episode':
                         '%d' % (num_episodes / 10 * i + i_episode + 1),
@@ -183,21 +187,24 @@ for i in range(10):
                 })
             pbar.update(1)
 
-fileName = "D:\\pythonProject\\result\\v1-reset\\{}_{}_{}.npy".format(algorithm, env_name,
-                                                    datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
-
+dir = "./result"
+if not os.path.exists(dir):
+    os.makedirs(dir)
+fileName = "{}/{}_{}_{}.npy".format(dir, algorithm, env_name,
+                                    datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+print(os.getcwd())
 np.save(fileName, return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)
 plt.xlabel('Episodes')
 plt.ylabel('Returns')
-plt.title('DQN on {}'.format(env_name))
+plt.title('{} on {}'.format(algorithm, env_name))
 plt.show()
 
 mv_return = rl_utils.moving_average(return_list, 9)
 plt.plot(episodes_list, mv_return)
 plt.xlabel('Episodes')
 plt.ylabel('Returns')
-plt.title('DQN moving_average on {}'.format(env_name))
+plt.title('{} moving_average on {}'.format(algorithm, env_name))
 plt.show()

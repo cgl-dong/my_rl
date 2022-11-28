@@ -1,19 +1,22 @@
-import random
-import gym
-import numpy as np
 import collections
-from tqdm import tqdm
+import datetime
+import gym
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+import random
 import torch
 import torch.nn.functional as F
-import matplotlib.pyplot as plt
-import rl_utils
-import datetime
+from tqdm import tqdm
 
-import os
+import rl_utils
+
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+
 
 class ReplayBuffer:
     ''' 经验回放池 '''
+
     def __init__(self, capacity):
         self.buffer = collections.deque(maxlen=capacity)  # 队列,先进先出
 
@@ -28,8 +31,10 @@ class ReplayBuffer:
     def size(self):  # 目前buffer中数据的数量
         return len(self.buffer)
 
+
 class Qnet(torch.nn.Module):
     ''' 只有一层隐藏层的Q网络 '''
+
     def __init__(self, state_dim, hidden_dim, action_dim):
         super(Qnet, self).__init__()
         self.fc1 = torch.nn.Linear(state_dim, hidden_dim)
@@ -41,8 +46,10 @@ class Qnet(torch.nn.Module):
         x = F.relu(self.fc1_2(x))  # 隐藏层使用ReLU激活函数
         return self.fc2(x)
 
+
 class DQN:
     ''' DQN算法 '''
+
     def __init__(self, state_dim, hidden_dim, action_dim, learning_rate, gamma,
                  epsilon, target_update, device):
         self.action_dim = action_dim
@@ -95,11 +102,9 @@ class DQN:
         self.count += 1
 
 
-
-
 algorithm = "DQN"
 lr = 2e-3
-num_episodes = 500
+num_episodes = 10000
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -109,21 +114,22 @@ minimal_size = 500
 batch_size = 64
 
 parms = {
-"algorithm":algorithm,
-"lr ": lr,
-"num_episodes ":num_episodes,
-"hidden_dim ":hidden_dim,
-"gamma ": gamma,
-"epsilon ": epsilon,
-"target_update ":target_update,
-"buffer_size ":buffer_size,
-"minimal_size ":minimal_size,
-"batch_size ":batch_size,
+    "algorithm": algorithm,
+    "lr ": lr,
+    "num_episodes ": num_episodes,
+    "hidden_dim ": hidden_dim,
+    "gamma ": gamma,
+    "epsilon ": epsilon,
+    "target_update ": target_update,
+    "buffer_size ": buffer_size,
+    "minimal_size ": minimal_size,
+    "batch_size ": batch_size,
 }
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
+print(device)
 
-env_name = 'CartPole-v0'
+env_name = 'CartPole-v1'
 env = gym.make(env_name)
 random.seed(0)
 np.random.seed(0)
@@ -163,26 +169,31 @@ for i in range(10):
             if (i_episode + 1) % 10 == 0:
                 pbar.set_postfix({
                     'episode':
-                    '%d' % (num_episodes / 10 * i + i_episode + 1),
+                        '%d' % (num_episodes / 10 * i + i_episode + 1),
                     'return':
-                    '%.3f' % np.mean(return_list[-10:])
+                        '%.3f' % np.mean(return_list[-10:])
                 })
             pbar.update(1)
 
-fileName = "../result/v0/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
 
-np.save(fileName,return_list)
+dir = "./result"
+if not os.path.exists(dir):
+    os.makedirs(dir)
+fileName = "{}/{}_{}_{}.npy".format(dir,algorithm, env_name,
+                                                    datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+print(os.getcwd())
+np.save(fileName, return_list)
 
 episodes_list = list(range(len(return_list)))
 plt.plot(episodes_list, return_list)
 plt.xlabel('Episodes')
 plt.ylabel('Returns')
-plt.title('DQN on {}'.format(env_name))
+plt.title('{} on {}'.format(algorithm,env_name))
 plt.show()
 
 mv_return = rl_utils.moving_average(return_list, 9)
 plt.plot(episodes_list, mv_return)
 plt.xlabel('Episodes')
 plt.ylabel('Returns')
-plt.title('DQN moving_average on {}'.format(env_name))
+plt.title('{} moving_average on {}'.format(algorithm,env_name))
 plt.show()
