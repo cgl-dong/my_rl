@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/graph/output.npy" charset="GBK" />
     <file url="file://$PROJECT_DIR$/hand/output.npy" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/hand/result/DQN.pth" charset="ISO-8859-1" />
   </component>
 </project>

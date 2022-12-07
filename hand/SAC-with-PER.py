@@ -211,6 +211,8 @@ torch.manual_seed(0)
 state_dim = env.observation_space.shape[0]
 action_dim = env.action_space.n
 
+print(device,os.getcwd())
+
 agent = SAC(state_dim, hidden_dim, action_dim, actor_lr, critic_lr, alpha_lr,
             target_entropy, tau, gamma, device)
 
@@ -222,7 +224,6 @@ if not os.path.exists(dir):
     os.makedirs(dir)
 fileName = "{}/{}_{}_{}.npy".format(dir, algorithm, env_name,
                                     datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
-print(os.getcwd())
 np.save(fileName, return_list)
 
 episodes_list = list(range(len(return_list)))

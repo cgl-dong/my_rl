@@ -104,7 +104,7 @@ class DQN:
 
 algorithm = "DQN"
 lr = 2e-3
-num_episodes = 10000
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -176,20 +176,22 @@ for i in range(10):
             pbar.update(1)
 
 
+algorithm = "DQN"
+
+
 dir = "./result"
 if not os.path.exists(dir):
     os.makedirs(dir)
-fileName = "{}/{}_{}_{}.npy".format(dir,algorithm, env_name,
-                                                    datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
-print(os.getcwd())
+fileName = "{}/{}_{}_{}.npy".format(dir, algorithm, env_name,
+                                    datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
 np.save(fileName, return_list)
 
 episodes_list = list(range(len(return_list)))
-plt.plot(episodes_list, return_list)
-plt.xlabel('Episodes')
-plt.ylabel('Returns')
-plt.title('{} on {}'.format(algorithm,env_name))
-plt.show()
+# plt.plot(episodes_list, return_list)
+# plt.xlabel('Episodes')
+# plt.ylabel('Returns')
+# plt.title('{} on {}'.format(algorithm,env_name))
+# plt.show()
 
 mv_return = rl_utils.moving_average(return_list, 9)
 plt.plot(episodes_list, mv_return)
