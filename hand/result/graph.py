@@ -51,7 +51,10 @@ fig, ax = plt.subplots() # 创建图实例
 episodes_list = list(range(len(return_list)))
 i = 0
 for graph in return_lists:
-    ax.plot(episodes_list, rl_utils.moving_average(graph,9), label = return_names[i])
+    # y1 = rl_utils.moving_average(graph,9)
+    y1 = rl_utils.moving_average(graph,9)
+    y2 = np.std(y1)
+    ax.fill_between(episodes_list, y1, y2, alpha=0.4,label = return_names[i])
     i += 1
 
 ax.set_xlabel('Episodes') #设置x轴名称 x label
