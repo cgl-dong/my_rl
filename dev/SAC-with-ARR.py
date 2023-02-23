@@ -1,3 +1,5 @@
+
+
 import random
 
 import gym
@@ -5,11 +7,32 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
-import rl_utils
 import datetime
+from tqdm import tqdm
+import collections
 
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
+
+"""
+Adaptive Replay Ratio 自适应重放率
+交互多少次？更新多少次？重放一次
+"""
+
+class ReplayBuffer:
+    def __init__(self, capacity):
+        self.buffer = collections.deque(maxlen=capacity)
+
+    def add(self, state, action, reward, next_state, done):
+        self.buffer.append((state, action, reward, next_state, done))
+
+    def sample(self, batch_size):
+        transitions = random.sample(self.buffer, batch_size)
+        state, action, reward, next_state, done = zip(*transitions)
+        return np.array(state), action, reward, np.array(next_state), done
+
+    def size(self):
+        return len(self.buffer)
 
 class PolicyNet(torch.nn.Module):
     def __init__(self, state_dim, hidden_dim, action_dim):
@@ -37,7 +60,7 @@ class QValueNet(torch.nn.Module):
 class SAC:
     ''' 处理离散动作的SAC算法 '''
     def __init__(self, state_dim, hidden_dim, action_dim, actor_lr, critic_lr,
-                 alpha_lr, target_entropy, tau, gamma, device):
+                 alpha_lr, target_entropy, tau, gamma, device,replay_size):
         # 策略网络
         self.actor = PolicyNet(state_dim, hidden_dim, action_dim).to(device)
         # 第一个Q网络
@@ -66,6 +89,8 @@ class SAC:
         self.gamma = gamma
         self.tau = tau
         self.device = device
+        self.state_dim, self.hidden_dim, self.action_dim = state_dim, hidden_dim, action_dim
+        self.replay_size = replay_size
 
     def take_action(self, state):
         state = torch.tensor([state], dtype=torch.float).to(self.device)
@@ -73,6 +98,10 @@ class SAC:
         action_dist = torch.distributions.Categorical(probs)
         action = action_dist.sample()
         return action.item()
+
+    # 重置参数
+    def reset_net(self):
+        self.actor = PolicyNet(self.state_dim,self. hidden_dim, self.action_dim).to(self.device)
 
     # 计算目标Q值,直接用策略网络的输出概率进行期望计算
     def calc_target(self, rewards, next_states, dones):
@@ -142,9 +171,51 @@ class SAC:
         alpha_loss.backward()
         self.log_alpha_optimizer.step()
 
+        # 更新重放率
+
         self.soft_update(self.critic_1, self.target_critic_1)
         self.soft_update(self.critic_2, self.target_critic_2)
 
+def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size, batch_size):
+    return_list = []
+    for i in range(10):
+        with tqdm(total=int(num_episodes / 10), desc='Iteration %d' % i) as pbar:
+            for i_episode in range(int(num_episodes / 10)):
+                episode_return = 0
+                state = env.reset()
+                done = False
+                while not done:
+                    action = agent.take_action(state)
+                    next_state, reward, done, _ = env.step(action)
+                    replay_buffer.add(state, action, reward, next_state, done)
+                    state = next_state
+                    episode_return += reward
+                    if replay_buffer.size() > minimal_size:
+                        '''
+                        是否可以适当处理这个重放的次数，将其作为参数。根据回报值，加一个网络监督这个参数。
+                        '''
+                        for k in range(agent.replay_size):
+                            b_s, b_a, b_r, b_ns, b_d = replay_buffer.sample(batch_size)
+                            transition_dict = {'states': b_s, 'actions': b_a, 'next_states': b_ns, 'rewards': b_r,
+                                               'dones': b_d}
+
+                            agent.update(transition_dict)
+
+                return_list.append(episode_return)
+
+                if (i_episode + 1) % 10 == 0:
+                    pbar.set_postfix({'episode': '%d' % (num_episodes / 10 * i + i_episode + 1),
+                                      'return': '%.3f' % np.mean(return_list[-10:])})
+                pbar.update(1)
+    return return_list
+
+def moving_average(a, window_size):
+    cumulative_sum = np.cumsum(np.insert(a, 0, 0))
+    middle = (cumulative_sum[window_size:] - cumulative_sum[:-window_size]) / window_size
+    r = np.arange(1, window_size - 1, 2)
+    begin = np.cumsum(a[:window_size - 1])[::2] / r
+    end = (np.cumsum(a[:-window_size:-1])[::2] / r)[::-1]
+    return np.concatenate((begin, middle, end))
 
 actor_lr = 1e-3
 critic_lr = 1e-2
@@ -156,6 +227,7 @@ tau = 0.005  # 软更新参数
 buffer_size = 10000
 minimal_size = 500
 batch_size = 64
+replay_size = 3 # 重放次数
 target_entropy = -1
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
@@ -166,18 +238,18 @@ random.seed(0)
 np.random.seed(0)
 env.seed(0)
 torch.manual_seed(0)
-replay_buffer = rl_utils.ReplayBuffer(buffer_size)
+replay_buffer = ReplayBuffer(buffer_size)
 state_dim = env.observation_space.shape[0]
 action_dim = env.action_space.n
 agent = SAC(state_dim, hidden_dim, action_dim, actor_lr, critic_lr, alpha_lr,
-            target_entropy, tau, gamma, device)
+            target_entropy, tau, gamma, device,replay_size)
 
-return_list = rl_utils.train_off_policy_agent(env, agent, num_episodes,
+return_list = train_off_policy_agent(env, agent, num_episodes,
                                               replay_buffer, minimal_size,
                                               batch_size)
-algorithm = "SAC"
+algorithm = "SacArr"
 
-fileName = "../result/v0/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
+fileName = "./result/{}_{}_{}.npy".format(algorithm,env_name,datetime.datetime.now().strftime("%Y-%m-%d-%H-%M"))
 
 np.save(fileName,return_list)
 
@@ -188,9 +260,9 @@ plt.ylabel('Returns')
 plt.title('SAC on {}'.format(env_name))
 plt.show()
 
-mv_return = rl_utils.moving_average(return_list, 9)
+mv_return = moving_average(return_list, 9)
 plt.plot(episodes_list, mv_return)
 plt.xlabel('Episodes')
 plt.ylabel('Returns')
-plt.title('SAC-re on {}'.format(env_name))
+plt.title('SAC-with-ARR on {}'.format(env_name))
 plt.show()
