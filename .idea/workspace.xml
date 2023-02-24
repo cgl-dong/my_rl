@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="ccep、cclf论文代码加入">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/SAC-with-ARR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/result/PPO_CartPole-v1_2022-11-04-11-05.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/result/SAC2_CartPole-v1_2023-02-19-21-05.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/result/SAC3-ARR5_CartPole-v1_2023-02-23-12-23.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/result/SAC_CartPole-v1_2022-11-04-12-11.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/de_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/SAC-with-ARR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/SAC-重放重置.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/ac-demo/AC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/ac-demo/DQN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/ac-demo/rl_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/result2/DQN_CartPole-v1_2022-11-04-10-45.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hand/result2/graph.py" afterDir="false" />
+    <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="重放率增加">
+      <change afterPath="$PROJECT_DIR$/dev/result/sac-arr/graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand/DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand/SAC.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand/SAC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand/result/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev/result/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/v0/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/result/v0/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/result/SAC3-ARR5_CartPole-v1_2023-02-23-12-23.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dev/result/sac-arr/Sac3Arr5_CartPole-v1_2023-02-23-12-23.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "SQL Inserts",
-    "last_opened_file_path": "D:/pythonProject/dev/result",
+    "last_opened_file_path": "D:/pythonProject/dev/result/sac-arr",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
@@ -92,20 +75,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\dev\result\sac-arr" />
       <recent name="D:\pythonProject\dev\result" />
       <recent name="D:\pythonProject\dev" />
       <recent name="D:\pythonProject\hand\result2" />
       <recent name="D:\pythonProject\hand" />
-      <recent name="D:\pythonProject\hand\yankong" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\dev\result\sac-arr" />
       <recent name="D:\pythonProject\ElegantRL-master" />
       <recent name="D:\pythonProject\ElegantRL-master\ElegantRL-master" />
       <recent name="D:\pythonProject\hand\hDQN\HRL-master" />
       <recent name="D:\pythonProject\hand\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.graph (3)">
+  <component name="RunManager" selected="Python.graph (4)">
     <configuration name="SAC-with-ARR" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,7 +178,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="graph (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,12 +186,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/result/v0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dev/result/sac-arr" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/result/v0/graph.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dev/result/sac-arr/graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,18 +202,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.SAC-with-ARR" />
-      <item itemvalue="Python.graph" />
       <item itemvalue="Python.graph (1)" />
       <item itemvalue="Python.graph (2)" />
       <item itemvalue="Python.graph (3)" />
+      <item itemvalue="Python.graph (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.graph (4)" />
         <item itemvalue="Python.graph (3)" />
         <item itemvalue="Python.SAC-with-ARR" />
         <item itemvalue="Python.graph (2)" />
         <item itemvalue="Python.graph (1)" />
-        <item itemvalue="Python.graph" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +261,7 @@
       <workItem from="1673506051650" duration="984000" />
       <workItem from="1673705266748" duration="9049000" />
       <workItem from="1676601938974" duration="9412000" />
-      <workItem from="1676764142656" duration="31834000" />
+      <workItem from="1676764142656" duration="32827000" />
     </task>
     <task id="LOCAL-00001" summary="tianshou加入">
       <created>1667448603744</created>
@@ -349,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673777520535</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="重放率增加">
+      <created>1677155109980</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677155109981</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +368,8 @@
     <MESSAGE value="切换出win分支" />
     <MESSAGE value="eipo存储" />
     <MESSAGE value="ccep、cclf论文代码加入" />
-    <option name="LAST_COMMIT_MESSAGE" value="ccep、cclf论文代码加入" />
+    <MESSAGE value="重放率增加" />
+    <option name="LAST_COMMIT_MESSAGE" value="重放率增加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -507,6 +499,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$AC_Reset.coverage" NAME="AC-Reset Coverage Results" MODIFIED="1669468737210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$DDQN.coverage" NAME="DDQN Coverage Results" MODIFIED="1664628356004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$softmax_classier.coverage" NAME="softmax-classier Coverage Results" MODIFIED="1664442388825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph__4_.coverage" NAME="graph (4) Coverage Results" MODIFIED="1677234196530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev/result/sac-arr" />
     <SUITE FILE_PATH="coverage/pythonProject$SAC_.coverage" NAME="SAC-重放重置 Coverage Results" MODIFIED="1677116933924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$mujoco_test.coverage" NAME="mujoco_test Coverage Results" MODIFIED="1667527050603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_tianshou" />
     <SUITE FILE_PATH="coverage/pythonProject$My_TD3.coverage" NAME="My_TD3 Coverage Results" MODIFIED="1665990942029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
@@ -524,7 +517,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$TRPO.coverage" NAME="TRPO Coverage Results" MODIFIED="1669430856936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$SAC_with_ARR.coverage" NAME="SAC-with-ARR Coverage Results" MODIFIED="1677152069269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev" />
     <SUITE FILE_PATH="coverage/pythonProject$wj.coverage" NAME="wj Coverage Results" MODIFIED="1669789644661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sql" />
-    <SUITE FILE_PATH="coverage/pythonProject$graph__3_.coverage" NAME="graph (3) Coverage Results" MODIFIED="1677154174499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev/result" />
+    <SUITE FILE_PATH="coverage/pythonProject$graph__3_.coverage" NAME="graph (3) Coverage Results" MODIFIED="1677234046657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev/result" />
     <SUITE FILE_PATH="coverage/pythonProject$ok_demo.coverage" NAME="ok.demo Coverage Results" MODIFIED="1664454974792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject$SAC_with_PER.coverage" NAME="SAC-with-PER Coverage Results" MODIFIED="1669608567075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$BC_PPO.coverage" NAME="BC_PPO Coverage Results" MODIFIED="1667703903711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
