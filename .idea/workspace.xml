@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="重放率增加">
-      <change afterPath="$PROJECT_DIR$/dev/result/sac-arr/graph.py" afterDir="false" />
+    <list default="true" id="0aa6e45e-12da-4d48-a5c4-146c3e01e151" name="Changes" comment="比较更新次数对结果的影响">
+      <change afterPath="$PROJECT_DIR$/dev/result/sac-arr/SacArr3_CartPole-v1_2023-02-23-21-16.npy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/utils/plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/result/SAC3-ARR5_CartPole-v1_2023-02-23-12-23.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dev/result/sac-arr/Sac3Arr5_CartPole-v1_2023-02-23-12-23.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/SAC-with-ARR.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev/SAC-with-ARR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/result/sac-arr/Sac3Arr5_CartPole-v1_2023-02-23-12-23.npy" beforeDir="false" afterPath="$PROJECT_DIR$/dev/result/sac-arr/SacArr5_CartPole-v1_2023-02-23-12-23.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
       <recent name="D:\pythonProject\hand\common" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.graph (4)">
+  <component name="RunManager" selected="Python.SAC-with-ARR">
     <configuration name="SAC-with-ARR" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,9 +211,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SAC-with-ARR" />
         <item itemvalue="Python.graph (4)" />
         <item itemvalue="Python.graph (3)" />
-        <item itemvalue="Python.SAC-with-ARR" />
         <item itemvalue="Python.graph (2)" />
         <item itemvalue="Python.graph (1)" />
       </list>
@@ -261,7 +263,7 @@
       <workItem from="1673506051650" duration="984000" />
       <workItem from="1673705266748" duration="9049000" />
       <workItem from="1676601938974" duration="9412000" />
-      <workItem from="1676764142656" duration="32827000" />
+      <workItem from="1676764142656" duration="41906000" />
     </task>
     <task id="LOCAL-00001" summary="tianshou加入">
       <created>1667448603744</created>
@@ -340,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677155109981</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="比较更新次数对结果的影响">
+      <created>1677234398153</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677234398153</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +378,8 @@
     <MESSAGE value="eipo存储" />
     <MESSAGE value="ccep、cclf论文代码加入" />
     <MESSAGE value="重放率增加" />
-    <option name="LAST_COMMIT_MESSAGE" value="重放率增加" />
+    <MESSAGE value="比较更新次数对结果的影响" />
+    <option name="LAST_COMMIT_MESSAGE" value="比较更新次数对结果的影响" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -515,7 +525,7 @@
     <SUITE FILE_PATH="coverage/pythonProject$A3C.coverage" NAME="A3C Coverage Results" MODIFIED="1667701890832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$HER_DQN.coverage" NAME="HER_DQN Coverage Results" MODIFIED="1673782014264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
     <SUITE FILE_PATH="coverage/pythonProject$TRPO.coverage" NAME="TRPO Coverage Results" MODIFIED="1669430856936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hand" />
-    <SUITE FILE_PATH="coverage/pythonProject$SAC_with_ARR.coverage" NAME="SAC-with-ARR Coverage Results" MODIFIED="1677152069269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev" />
+    <SUITE FILE_PATH="coverage/pythonProject$SAC_with_ARR.coverage" NAME="SAC-with-ARR Coverage Results" MODIFIED="1677243936941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev" />
     <SUITE FILE_PATH="coverage/pythonProject$wj.coverage" NAME="wj Coverage Results" MODIFIED="1669789644661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sql" />
     <SUITE FILE_PATH="coverage/pythonProject$graph__3_.coverage" NAME="graph (3) Coverage Results" MODIFIED="1677234046657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev/result" />
     <SUITE FILE_PATH="coverage/pythonProject$ok_demo.coverage" NAME="ok.demo Coverage Results" MODIFIED="1664454974792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
