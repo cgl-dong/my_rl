@@ -105,6 +105,13 @@ class SAC:
     def reset_net(self):
         self.actor = PolicyNet(self.state_dim,self. hidden_dim, self.action_dim).to(self.device)
         # todo： 3、C网络是否需要重置
+        # 第一个Q网络
+        self.critic_1 = QValueNet(self.state_dim, self.hidden_dim, self.action_dim).to(self.device)
+        # 第二个Q网络
+        self.critic_2 = QValueNet(self.state_dim, self.hidden_dim, self.action_dim).to(self.device)
+
+        self.target_critic_1.load_state_dict(self.critic_1.state_dict())
+        self.target_critic_2.load_state_dict(self.critic_2.state_dict())
 
     # 计算目标Q值,直接用策略网络的输出概率进行期望计算
     def calc_target(self, rewards, next_states, dones):
@@ -186,6 +193,8 @@ def get_trans(replay_buffer):
 
 def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size, batch_size):
     return_list = []
+    # 控制重置，不能让在下滑过程中多次重置
+    reset_flag = 0
     replay_buffer_re = ReplayBuffer(minimal_size)
     for i in range(10):
         with tqdm(total=int(num_episodes / 10), desc='Iteration %d' % i) as pbar:
@@ -193,6 +202,7 @@ def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size
                 episode_return = 0
                 state = env.reset()
                 done = False
+                reset_flag += 1
                 while not done:
                     action = agent.take_action(state)
                     next_state, reward, done, _ = env.step(action)
@@ -210,16 +220,21 @@ def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size
 
                         for k in range(agent.replay_size):
                             transition_dict = get_trans(replay_buffer)
-
+                            #  todo 为何不在更新中加入好奇心机制
                             agent.update(transition_dict)
-                    # 如果出现断崖式下跌，就开始重置参数
-                if episode_return <= agent.reset_r * np.mean(return_list[-10:]):
+
+                    """
+                    断崖式才开始重置，其他形式重置可以不，更新频率到达一定程度
+                    """
+                if reset_flag % 200 == 0:
                     agent.reset_net()
                     print("重置actor ,i_episode: {}".format(i_episode))
-                    # todo:2、重置后拿到前阶段经验池进行多次学习,这个次数也需要控制，太大会过拟合，太小agent恢复的慢
-                    for k in range(agent.reset_replay_size):
-                        transition_dict = get_trans(replay_buffer_re)
+
+                    # todo:2、重置后拿到前阶段经验池进行多次学习,这个次数也需要控制，太大会过拟合，太小agent恢复的慢，为何不在学习过程中加入好奇心机制，防止过拟合
+                    for s in range(agent.reset_replay_size):
+                        transition_dict = get_trans(replay_buffer)
                         agent.update(transition_dict)
+                        print("s:{}".format(s))
 
                 return_list.append(episode_return)
 
@@ -228,6 +243,7 @@ def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size
                                       'return': '%.3f' % np.mean(return_list[-10:])})
                 pbar.update(1)
 
+        reset_flag = 0
     return return_list
 
 def moving_average(a, window_size):
@@ -251,8 +267,8 @@ buffer_size = 10000
 minimal_size = 500
 batch_size = 64
 replay_size = 3 # 重放次数
-reset_r = 0.3 # 重置因子
-reset_replay_size = 100 # 重置后重放次数
+reset_r = 0.01 # 重置因子
+reset_replay_size = 1000 # 重置后重放次数
 target_entropy = -1
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
