@@ -7,7 +7,6 @@ import numpy as np
 import hand.rl_utils as rl_utils
 import matplotlib.pyplot as plt
 
-
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 #
 # x = np.linspace(0.1,1,10)
