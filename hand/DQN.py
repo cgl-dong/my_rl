@@ -104,7 +104,7 @@ class DQN:
 
 algorithm = "DQN"
 lr = 2e-3
-num_episodes = 10000
+num_episodes = 1000
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
