@@ -192,6 +192,36 @@ def get_trans(replay_buffer):
     b_s, b_a, b_r, b_ns, b_d = replay_buffer.sample(batch_size)
     return {'states': b_s, 'actions': b_a, 'next_states': b_ns, 'rewards': b_r,'dones': b_d}
 
+def evaluate_policy(agent, env_name, seed, eval_episodes=10):
+    eval_env = gym.make(env_name)
+    eval_env.seed(seed + 100)
+
+    avg_reward = 0.
+    episodes = 10
+
+    for _ in range(eval_episodes):
+        state = eval_env.reset()
+        episode_reward = 0
+        done = False
+
+        while not done:
+            action = agent.take_action(state)
+
+            next_state, reward, done, _ = eval_env.step(action)
+            episode_reward += reward
+
+            state = next_state
+
+        avg_reward += episode_reward
+
+    avg_reward /= episodes
+
+    print("---------------------------------------")
+    print(f"Evaluation over {episodes} episodes: {avg_reward:.3f}")
+    print("---------------------------------------")
+
+    return avg_reward
+
 def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size, batch_size):
     return_list = []
     # 控制重置，不能让在下滑过程中多次重置
@@ -200,7 +230,6 @@ def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size
     for i in range(10):
         with tqdm(total=int(num_episodes / 10), desc='Iteration %d' % i) as pbar:
             for i_episode in range(int(num_episodes / 10)):
-                episode_return = 0
                 state = env.reset()
                 done = False
                 reset_flag += 1
@@ -214,7 +243,7 @@ def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size
                         replay_buffer_re.add(state, action, reward, next_state, done)
 
                     state = next_state
-                    episode_return += reward
+
 
                     if replay_buffer.size() > minimal_size:
                         # todo:1、是否可以适当处理这个重放的次数，将其作为参数。根据回报值，加一个网络监督这个参数。
@@ -236,9 +265,10 @@ def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size
                 #         agent.update(transition_dict)
                 #         print("s:{}".format(s))
 
-                return_list.append(episode_return)
 
                 if (i_episode + 1) % 10 == 0:
+                    er = evaluate_policy(agent, env_name, 0)
+                    return_list.append(er)
                     pbar.set_postfix({'episode': '%d' % (num_episodes / 10 * i + i_episode + 1),
                                       'return': '%.3f' % np.mean(return_list[-10:])})
                 pbar.update(1)

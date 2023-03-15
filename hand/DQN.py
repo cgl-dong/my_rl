@@ -104,7 +104,7 @@ class DQN:
 
 algorithm = "DQN"
 lr = 2e-3
-num_episodes = 1000
+num_episodes = 500
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -163,7 +163,7 @@ for i in range(10):
             pbar.update(1)
 
 
-dir = "./result"
+dir = "./result-DQN"
 if not os.path.exists(dir):
     os.makedirs(dir)
 fileName = "{}/{}_{}_{}.npy".format(dir,algorithm, env_name,
