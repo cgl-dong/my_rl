@@ -33,7 +33,7 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 #
 
 files = os.listdir(os.getcwd())
-real_file = [x for x in files if len(x) > 15]
+real_file = [x for x in files if x[0:3] == "SAC" and len(x) > 15]
 
 
 return_list = []
