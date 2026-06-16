@@ -78,10 +78,9 @@ class PPO:
 
         for _ in range(self.epochs):
             log_probs = torch.log(self.actor(states).gather(1, actions))
-            ratio = torch.exp(log_probs - old_log_probs)
+            ratio = torch.exp(log_probs - old_log_probs) # 计算新策略相对于旧策略的变化程度
             surr1 = ratio * advantage
-            surr2 = torch.clamp(ratio, 1 - self.eps,
-                                1 + self.eps) * advantage  # 截断
+            surr2 = torch.clamp(ratio, 1 - self.eps,1 + self.eps) * advantage  # 截断
             actor_loss = torch.mean(-torch.min(surr1, surr2))  # PPO损失函数
             critic_loss = torch.mean(F.mse_loss(self.critic(states), td_target.detach()))
 

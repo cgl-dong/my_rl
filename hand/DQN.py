@@ -104,7 +104,7 @@ class DQN:
 
 algorithm = "DQN"
 lr = 2e-3
-num_episodes = 10000
+num_episodes = 500
 hidden_dim = 128
 gamma = 0.95
 epsilon = 0.01
@@ -113,18 +113,6 @@ buffer_size = 10000
 minimal_size = 500
 batch_size = 64
 
-parms = {
-    "algorithm": algorithm,
-    "lr ": lr,
-    "num_episodes ": num_episodes,
-    "hidden_dim ": hidden_dim,
-    "gamma ": gamma,
-    "epsilon ": epsilon,
-    "target_update ": target_update,
-    "buffer_size ": buffer_size,
-    "minimal_size ": minimal_size,
-    "batch_size ": batch_size,
-}
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device(
     "cpu")
 print(device)
@@ -156,15 +144,14 @@ for i in range(10):
                 episode_return += reward
                 # 当buffer数据的数量超过一定值后,才进行Q网络训练
                 if replay_buffer.size() > minimal_size:
-                    b_s, b_a, b_r, b_ns, b_d = replay_buffer.sample(batch_size)
-                    transition_dict = {
-                        'states': b_s,
-                        'actions': b_a,
-                        'next_states': b_ns,
-                        'rewards': b_r,
-                        'dones': b_d
-                    }
-                    agent.update(transition_dict)
+                    for k in range(5):
+                        b_s, b_a, b_r, b_ns, b_d = replay_buffer.sample(batch_size)
+                        transition_dict = {'states': b_s, 'actions': b_a, 'next_states': b_ns, 'rewards': b_r,
+                                           'dones': b_d}
+
+                        """拿相同的数据去更新，或者从一个池子中，反复采样
+                        """
+                        agent.update(transition_dict)
             return_list.append(episode_return)
             if (i_episode + 1) % 10 == 0:
                 pbar.set_postfix({
@@ -176,7 +163,7 @@ for i in range(10):
             pbar.update(1)
 
 
-dir = "./result"
+dir = "./result-DQN"
 if not os.path.exists(dir):
     os.makedirs(dir)
 fileName = "{}/{}_{}_{}.npy".format(dir,algorithm, env_name,
